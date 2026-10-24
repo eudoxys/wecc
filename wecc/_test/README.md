@@ -14,8 +14,8 @@ downloads, and roughly how long it takes.
 
 Environment variables:
 
-  - `{{{PACKAGE_UPPER}}}_CACHEDIR`: cache folder (default: the `cache` package default)
-  - `{{{PACKAGE_UPPER}}}_TEST_BUILD=1`: build missing slow-test inputs instead of skipping
+  - `WECC_CACHEDIR`: cache folder (default: the `cache` package default)
+  - `WECC_TEST_BUILD=1`: build missing slow-test inputs instead of skipping
 
 test_cli.py
 -----------
@@ -24,7 +24,7 @@ Fast, self-contained checks that the package imports, reports a version, and
 that the CLI handles `--help`, `--version`, and an unknown command. No network;
 runs in under a second:
 
-	pytest {{{PACKAGE}}}/_test/test_cli.py
+	pytest wecc/_test/test_cli.py
 
 Add a section like this one for each new `test_<name>.py`: what it checks, on
 which case, whether it is fast/synthetic or networked, and how to run it alone.

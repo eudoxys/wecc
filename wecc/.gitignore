@@ -1,3 +1,3 @@
-# {{{PACKAGE}}}/.gitignore: generated output that must never be committed
+# wecc/.gitignore: generated output that must never be committed
 # (caches, downloads, scratch output from tests and validation runs)
 .cache*

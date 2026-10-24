@@ -1,5 +1,5 @@
 # <Area>
 
-- [x] Finished item (see `{{{PACKAGE}}}.module`)
+- [x] Finished item (see `wecc.module`)
 
 - [ ] Open item, with what remains

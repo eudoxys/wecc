@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
 # list every file pattern the package reads at run time
-"{{{PACKAGE}}}" = ["*.py"]
+"wecc" = ["*.py"]
 
 [tool.setuptools.dynamic]
 dependencies = {file=["requirements.txt"]}
 
 [project]
-name = "{{{PACKAGE}}}"
+name = "wecc"
 version = "0.0.0" # 0.0.0 = unreleased (hidden by `epm index`)
-description = "{{{PACKAGE_DESCRIPTION}}}"
+description = "WECC data in support of other Eudoxys packages"
 authors = [
     {name = "David P. Chassin <dchassin@eudoxys.com>"},
     ]
@@ -32,16 +32,16 @@ classifiers = [
 dynamic = ["dependencies"]
 
 [project.urls]
-Homepage = "https://github.com/eudoxys/{{{PACKAGE}}}"
-Documentation = "https://www.eudoxys.com/{{{PACKAGE}}}"
-Repository = "https://github.com/eudoxys/{{{PACKAGE}}}.git"
-Issues = "https://github.com/eudoxys/{{{PACKAGE}}}/issues"
+Homepage = "https://github.com/eudoxys/wecc"
+Documentation = "https://www.eudoxys.com/wecc"
+Repository = "https://github.com/eudoxys/wecc.git"
+Issues = "https://github.com/eudoxys/wecc/issues"
 
 [project.scripts]
-"{{{PACKAGE}}}" = "{{{PACKAGE}}}.cli:main" # omit if there is no CLI
+"wecc" = "wecc.cli:main" # omit if there is no CLI
 
 [tool.pytest.ini_options]
-testpaths = ["{{{PACKAGE}}}/_test"]
+testpaths = ["wecc/_test"]
 markers = [
     "network: downloads external data (slow on an empty cache)",
     ]

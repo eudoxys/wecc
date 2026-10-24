@@ -3,9 +3,9 @@ name: Documentation
 on:
   push:
     branches: ["main"]
-    # pdoc reads {{{PACKAGE}}}/__init__.py and the public modules' docstrings
+    # pdoc reads wecc/__init__.py and the public modules' docstrings
     paths:
-      - "{{{PACKAGE}}}/*.py"
+      - "wecc/*.py"
       - "Makefile"
       - "requirements.txt"
       - "pyproject.toml"

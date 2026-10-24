@@ -1,4 +1,4 @@
-# eudoxys/{{{PACKAGE}}} — package design (draft 1)
+# eudoxys/wecc — package design (draft 1)
 
 Status: draft, YYYY-MM-DD
 
@@ -23,7 +23,7 @@ reversed decision in place and note the date.
 ## Module layout
 
 ```
-{{{PACKAGE}}}/
+wecc/
   module.py         Class: what it holds, Class(args)
   # planned
   future.py         Future: what it will hold

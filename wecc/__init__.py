@@ -1,9 +1,9 @@
-"""{{{PACKAGE_DESCRIPTION}}}
+"""WECC data in support of other Eudoxys packages
 
 Syntax
 ------
 
-    {{{PACKAGE}}} COMMAND [-h] [--version] [-d] [-w] [OPTIONS ...]
+    wecc COMMAND [-h] [--version] [-d] [-w] [OPTIONS ...]
 
 Positional arguments
 --------------------
@@ -26,7 +26,7 @@ Description
 
 What the package is for. Then, as a specification:
 
-Given ..., `{{{PACKAGE}}}.module.Class` returns ... that is expected to satisfy:
+Given ..., `wecc.module.Class` returns ... that is expected to satisfy:
 
   1. **Shape.** ...
 
@@ -54,16 +54,16 @@ Citation
 
 To cite this dataset or package use the following:
 
-  - Chassin, David P., "{{{PACKAGE_DESCRIPTION}}}" ({{{YEAR}}}). URL:
-    https://www.eudoxys.com/{{{PACKAGE}}}.
+  - Chassin, David P., "WECC data in support of other Eudoxys packages" (2026). URL:
+    https://www.eudoxys.com/wecc.
 """
 
 try:
     import importlib.metadata
-    __version__ = importlib.metadata.version("{{{PACKAGE}}}")
+    __version__ = importlib.metadata.version("wecc")
 except Exception: # pylint: disable=broad-exception-caught
     __version__ = "dev"
 
 # re-export the public API
-# from {{{PACKAGE}}}.module import Class
-from {{{PACKAGE}}}.cli import main
+# from wecc.module import Class
+from wecc.cli import main
