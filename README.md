@@ -2,39 +2,35 @@
 Template for a new Eudoxys package; delete this comment once filled in.
 Follow the eudoxys-package skill (github.com/eudoxys/claude), section 13.
 
-1. Replace these placeholders in every file:
-     {{{PACKAGE}}}              package/repo/import name, e.g. loads
-     {{{PACKAGE_UPPER}}}        the same in upper case, for env vars, e.g. LOADS
-     {{{PACKAGE_DESCRIPTION}}}  one-line description
-     {{{YEAR}}}                 year, for COPYRIGHT.md and the citation in __init__.py
-   and rename the {{{PACKAGE}}}/ folder to the package name.
+1. (Done) Template placeholders replaced: package `wecc`, env prefix `WECC`,
+   year 2026; folder renamed to `wecc/`.
 2. Fill in the prose placeholders in README.md, CLAUDE.md, DESIGN.md (or
    delete it if the design fits in the package docstring), and TODO.md.
 3. Enable GitHub Pages (source: GitHub Actions).
 4. Run `pytest`, `make docs`, and `python .github/check_manifest.py`.
 -->
 
-[![Validation](https://github.com/eudoxys/{{{PACKAGE}}}/actions/workflows/validate.yaml/badge.svg)](https://github.com/eudoxys/{{{PACKAGE}}}/actions/workflows/validate.yaml)
-[![Documentation](https://github.com/eudoxys/{{{PACKAGE}}}/actions/workflows/deploy-pages.yaml/badge.svg)](https://github.com/eudoxys/{{{PACKAGE}}}/actions/workflows/deploy-pages.yaml)
+[![Validation](https://github.com/eudoxys/wecc/actions/workflows/validate.yaml/badge.svg)](https://github.com/eudoxys/wecc/actions/workflows/validate.yaml)
+[![Documentation](https://github.com/eudoxys/wecc/actions/workflows/deploy-pages.yaml/badge.svg)](https://github.com/eudoxys/wecc/actions/workflows/deploy-pages.yaml)
 
-{{{PACKAGE_DESCRIPTION}}}
+WECC data in support of other Eudoxys packages
 
-One paragraph: what `{{{PACKAGE}}}` produces, from what inputs, and for whom.
+One paragraph: what `wecc` produces, from what inputs, and for whom.
 
 # Documentation
 
-See https://www.eudoxys.com/{{{PACKAGE}}}
+See https://www.eudoxys.com/wecc
 
 # Installation
 
 Install using Eudoxys Package Manager:
 
     pip install --upgrade git+https://github.com/eudoxys/epm
-    epm install {{{PACKAGE}}}
+    epm install wecc
 
 Install using `pip`:
 
-    pip install git+https://github.com/eudoxys/{{{PACKAGE}}}
+    pip install git+https://github.com/eudoxys/wecc
 
 # Maintenance
 
@@ -48,7 +44,7 @@ Install using `pip`:
     pytest
 
 Note any credentials or downloads the tests need and link to
-[`{{{PACKAGE}}}/_test/README.md`]({{{PACKAGE}}}/_test/README.md).
+[`wecc/_test/README.md`](wecc/_test/README.md).
 
 ## Cache build
 
@@ -59,11 +55,11 @@ and how long a full rebuild takes.
 
 ## Command line
 
-    {{{PACKAGE}}} print ...
+    wecc print ...
 
 ## Python
 
-    from {{{PACKAGE}}} import Class
+    from wecc import Class
     print(Class(...))
 
 with its real output.

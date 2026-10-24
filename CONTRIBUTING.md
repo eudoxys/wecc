@@ -1,11 +1,11 @@
-# Contributing to {{{PACKAGE}}}
+# Contributing to wecc
 
-Thank you for your interest in contributing to `{{{PACKAGE}}}`, part of the
+Thank you for your interest in contributing to `wecc`, part of the
 [Eudoxys](https://www.eudoxys.com/) family of packages. This guide explains
 how to report problems, propose changes, and submit pull requests.
 
 Read the [README](README.md) for what the package does, and the
-[documentation](https://www.eudoxys.com/{{{PACKAGE}}}) for how to use it.
+[documentation](https://www.eudoxys.com/wecc) for how to use it.
 Maintainers and AI assistants should also read [CLAUDE.md](CLAUDE.md),
 [DESIGN.md](DESIGN.md), and [MANIFEST.md](MANIFEST.md).
 
@@ -29,11 +29,11 @@ documentation. These GitHub guides may help:
 ### Create a new issue
 
 If you find a problem or want a change, first
-[search the existing issues](https://github.com/eudoxys/{{{PACKAGE}}}/issues).
+[search the existing issues](https://github.com/eudoxys/wecc/issues).
 If no issue covers it, open a new one. Include:
 
 - what you did (command or code, with the package version from
-  `{{{PACKAGE}}} --version` or `{{{PACKAGE}}}.__version__`);
+  `wecc --version` or `wecc.__version__`);
 - what you expected and what happened instead (full error output);
 - for data problems, the inputs (e.g. location and period) that show it.
 
@@ -44,7 +44,7 @@ adds the `approved` label to it. Approval means the maintainers agree the
 change is wanted and how it should be done. Discuss the approach in the
 issue before writing code; ask there if anything is unclear.
 
-Browse [approved open issues](https://github.com/eudoxys/{{{PACKAGE}}}/issues?q=is%3Aissue+is%3Aopen+label%3Aapproved)
+Browse [approved open issues](https://github.com/eudoxys/wecc/issues?q=is%3Aissue+is%3Aopen+label%3Aapproved)
 to find something to work on, and comment on the issue to say you are
 taking it.
 
@@ -75,7 +75,7 @@ taking it.
 3. Make your changes. Follow the conventions in [CLAUDE.md](CLAUDE.md) and
    the decisions in [DESIGN.md](DESIGN.md); match the existing code style and
    don't reformat code you aren't changing.
-4. Add or update tests in `{{{PACKAGE}}}/_test/` and run them:
+4. Add or update tests in `wecc/_test/` and run them:
 
        pytest
 
@@ -109,8 +109,8 @@ conversations resolved as you address them. If the branch falls behind
 ### Your PR is merged
 
 Congratulations, and thank you. Once merged, your change is installable
-from `main` with `epm install {{{PACKAGE}}}` or
-`pip install git+https://github.com/eudoxys/{{{PACKAGE}}}`, and appears in the next
+from `main` with `epm install wecc` or
+`pip install git+https://github.com/eudoxys/wecc`, and appears in the next
 tagged release.
 
 ## License

@@ -2,12 +2,12 @@
 
 import pytest
 
-import {{{PACKAGE}}}
-from {{{PACKAGE}}}.cli import main
+import wecc
+from wecc.cli import main
 
 def test_version():
     """The package reports a version string"""
-    assert isinstance({{{PACKAGE}}}.__version__,str) and {{{PACKAGE}}}.__version__
+    assert isinstance(wecc.__version__,str) and wecc.__version__
 
 @pytest.mark.parametrize("option",["--help","--version"])
 def test_info_options(option,capsys):

@@ -1,11 +1,11 @@
 """Command line interface
 
-See `{{{PACKAGE}}}` for the command syntax.
+See `wecc` for the command syntax.
 
 Examples
 --------
 
-    {{{PACKAGE}}} print ...
+    wecc print ...
 
 outputs
 
@@ -32,8 +32,8 @@ def main(argv:list[str]|None=None) -> int:
 
       - `int`: exit code (0 on success)
     """
-    parser = argparse.ArgumentParser(prog="{{{PACKAGE}}}",
-        epilog="See https://www.eudoxys.com/{{{PACKAGE}}} for full documentation.")
+    parser = argparse.ArgumentParser(prog="wecc",
+        epilog="See https://www.eudoxys.com/wecc for full documentation.")
     parser.add_argument("command",choices=["print"])
     parser.add_argument("--version",action="version",version=f"%(prog)s {sys.modules[__package__].__version__}")
     parser.add_argument("-d","--debug",action="store_true",help="enable debug logging and traceback on exceptions")
@@ -50,7 +50,7 @@ def main(argv:list[str]|None=None) -> int:
     except Exception as err: # pylint: disable=broad-exception-caught
         if args.debug:
             raise
-        print(f"ERROR [{{{PACKAGE}}}]: {err}",file=sys.stderr)
+        print(f"ERROR [wecc]: {err}",file=sys.stderr)
         return 1
 
 if __name__ == "__main__":

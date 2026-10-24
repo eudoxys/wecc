@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Guidance for Claude when working in the `eudoxys/{{{PACKAGE}}}` repository.
+Guidance for Claude when working in the `eudoxys/wecc` repository.
 General Eudoxys package conventions are in the `eudoxys-package` skill; this
 file records only what is specific to this package.
 
@@ -8,9 +8,9 @@ file records only what is specific to this package.
 
 One paragraph: purpose, Python version, maturity, main inputs/outputs.
 
-- Docs site: https://www.eudoxys.com/{{{PACKAGE}}} (pdoc from docstrings)
+- Docs site: https://www.eudoxys.com/wecc (pdoc from docstrings)
 - Maintainer: David P. Chassin
-- CLI entry point: `{{{PACKAGE}}}` -> `{{{PACKAGE}}}.cli:main`
+- CLI entry point: `wecc` -> `wecc.cli:main`
 
 ## Where things are
 

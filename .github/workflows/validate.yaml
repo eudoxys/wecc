@@ -5,10 +5,10 @@ on:
   push:
     branches: [ main ]
     paths: &paths
-      - "{{{PACKAGE}}}/**"
-      - "!{{{PACKAGE}}}/_explore/**"
-      - "!{{{PACKAGE}}}/_review/**"
-      - "!{{{PACKAGE}}}/_validate/**"
+      - "wecc/**"
+      - "!wecc/_explore/**"
+      - "!wecc/_review/**"
+      - "!wecc/_validate/**"
       - "!**/*.md"
       - "requirements.txt"
       - "pyproject.toml"
@@ -32,7 +32,7 @@ jobs:
 
     env:
       # keep downloaded data outside site-packages so actions/cache can reuse it
-      "{{{PACKAGE_UPPER}}}_CACHEDIR": ${{ github.workspace }}/.cache-data
+      "WECC_CACHEDIR": ${{ github.workspace }}/.cache-data
 
     steps:
     - uses: actions/checkout@v4
@@ -48,8 +48,8 @@ jobs:
       uses: actions/cache@v4
       with:
         path: .cache-data
-        key: "{{{PACKAGE}}}-data-v1-${{ hashFiles('{{{PACKAGE}}}/_test/**','requirements.txt') }}"
-        restore-keys: "{{{PACKAGE}}}-data-v1-"
+        key: "wecc-data-v1-${{ hashFiles('wecc/_test/**','requirements.txt') }}"
+        restore-keys: "wecc-data-v1-"
 
     - name: Install packages
       run: |
@@ -58,7 +58,7 @@ jobs:
 
     - name: Analyse code
       run: |
-        cd {{{PACKAGE}}}
+        cd wecc
         pylint --fail-under 0 *.py
 
     - name: Run tests
