@@ -1,0 +1,6 @@
+# third-party packages (unpinned unless a pin is needed), e.g.
+# numpy
+# pandas
+
+# sibling Eudoxys packages, e.g.
+# cache @ git+https://github.com/eudoxys/cache

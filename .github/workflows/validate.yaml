@@ -1,0 +1,70 @@
+name: Validation
+
+# Run only when code, test data, or dependencies change
+on:
+  push:
+    branches: [ main ]
+    paths: &paths
+      - "{{{PACKAGE}}}/**"
+      - "!{{{PACKAGE}}}/_explore/**"
+      - "!{{{PACKAGE}}}/_review/**"
+      - "!{{{PACKAGE}}}/_validate/**"
+      - "!**/*.md"
+      - "requirements.txt"
+      - "pyproject.toml"
+      - ".github/workflows/validate.yaml"
+  pull_request:
+    branches: [ main ]
+    paths: *paths
+  workflow_dispatch:
+
+# A newer push to the same branch/PR cancels the run in progress
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    # skip in the template repository itself, which has placeholders instead of code
+    if: ${{ !github.event.repository.is_template }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30 # hard stop on a hung download
+
+    env:
+      # keep downloaded data outside site-packages so actions/cache can reuse it
+      "{{{PACKAGE_UPPER}}}_CACHEDIR": ${{ github.workspace }}/.cache-data
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12" # must satisfy requires-python
+        cache: pip
+        cache-dependency-path: requirements.txt
+
+    - name: Restore downloaded test data
+      uses: actions/cache@v4
+      with:
+        path: .cache-data
+        key: "{{{PACKAGE}}}-data-v1-${{ hashFiles('{{{PACKAGE}}}/_test/**','requirements.txt') }}"
+        restore-keys: "{{{PACKAGE}}}-data-v1-"
+
+    - name: Install packages
+      run: |
+        pip install --upgrade pip
+        pip install . pytest pylint   # non-editable: catches missing package-data
+
+    - name: Analyse code
+      run: |
+        cd {{{PACKAGE}}}
+        pylint --fail-under 0 *.py
+
+    - name: Run tests
+      # env:
+      #   SERVICE_CREDENTIALS: ${{ secrets.SERVICE_CREDENTIALS }}
+      run: |
+        # write any credentials the code expects from secrets here, e.g.
+        # mkdir -p $HOME/.service && echo "$SERVICE_CREDENTIALS" > $HOME/.service/credentials.json
+        pytest --durations=10

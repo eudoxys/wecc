@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+# list every file pattern the package reads at run time
+"{{{PACKAGE}}}" = ["*.py"]
+
+[tool.setuptools.dynamic]
+dependencies = {file=["requirements.txt"]}
+
+[project]
+name = "{{{PACKAGE}}}"
+version = "0.0.0" # 0.0.0 = unreleased (hidden by `epm index`)
+description = "{{{PACKAGE_DESCRIPTION}}}"
+authors = [
+    {name = "David P. Chassin <dchassin@eudoxys.com>"},
+    ]
+maintainers = [
+    {name = "David P. Chassin <dchassin@eudoxys.com>"},
+    ]
+readme = "README.md"
+requires-python = "== 3.12.*" # must match the CI python version
+keywords = ["eudoxys","python"] # "eudoxys" marks an official Eudoxys release
+license-files = ["LICENSE"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries",
+    ]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/eudoxys/{{{PACKAGE}}}"
+Documentation = "https://www.eudoxys.com/{{{PACKAGE}}}"
+Repository = "https://github.com/eudoxys/{{{PACKAGE}}}.git"
+Issues = "https://github.com/eudoxys/{{{PACKAGE}}}/issues"
+
+[project.scripts]
+"{{{PACKAGE}}}" = "{{{PACKAGE}}}.cli:main" # omit if there is no CLI
+
+[tool.pytest.ini_options]
+testpaths = ["{{{PACKAGE}}}/_test"]
+markers = [
+    "network: downloads external data (slow on an empty cache)",
+    ]

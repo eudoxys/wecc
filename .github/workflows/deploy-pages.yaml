@@ -1,0 +1,45 @@
+name: Documentation
+
+on:
+  push:
+    branches: ["main"]
+    # pdoc reads {{{PACKAGE}}}/__init__.py and the public modules' docstrings
+    paths:
+      - "{{{PACKAGE}}}/*.py"
+      - "Makefile"
+      - "requirements.txt"
+      - "pyproject.toml"
+      - ".github/workflows/deploy-pages.yaml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # skip in the template repository itself, which has placeholders instead of code
+    if: ${{ !github.event.repository.is_template }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create docs
+        run: make docs
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
