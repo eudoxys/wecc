@@ -4,4 +4,5 @@ pandas
 # sibling Eudoxys packages
 cache @ git+https://github.com/eudoxys/cache
 fips @ git+https://github.com/eudoxys/fips
+loads @ git+https://github.com/eudoxys/loads
 weather @ git+https://github.com/eudoxys/weather

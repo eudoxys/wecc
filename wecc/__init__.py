@@ -5,6 +5,7 @@ Syntax
 
     wecc COMMAND [-h] [--version] [-d] [-w] [OPTIONS ...]
     wecc weather STATE YEAR [-r|--refresh] [-q|--quiet]
+    wecc loads STATE YEAR [-r|--refresh] [-q|--quiet]
 
 Positional arguments
 --------------------
@@ -15,6 +16,12 @@ Positional arguments
       files `wecc/weather/STATE/COUNTY/W_YEAR.csv.gz` for every county of a
       WECC state, from NSRDB via the Eudoxys `weather` package (see
       `wecc.weather`)
+
+    - `loads`: add (or with `--refresh`, rebuild) the county load files in
+      `wecc/loads/STATE/COUNTY/` for every county of a WECC state, using the
+      Eudoxys `loads` package: the 2018 reference data when `YEAR` is 2018,
+      and the hourly load estimate `Estimate_YEAR.csv.gz` of each WECC county
+      (see `wecc.loads`)
 
 Optional arguments
 ------------------
