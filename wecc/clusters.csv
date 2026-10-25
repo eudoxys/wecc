@@ -1,0 +1,408 @@
+county_st,medoid
+Apache AZ,Lincoln OR
+Cochise AZ,San Luis Obispo CA
+Coconino AZ,San Luis Obispo CA
+Gila AZ,Spokane WA
+Graham AZ,Multnomah OR
+Greenlee AZ,Lincoln OR
+La Paz AZ,Maricopa AZ
+Maricopa AZ,Maricopa AZ
+Mohave AZ,Multnomah OR
+Navajo AZ,Multnomah OR
+Pima AZ,Maricopa AZ
+Pinal AZ,Maricopa AZ
+Santa Cruz AZ,Maricopa AZ
+Yavapai AZ,Multnomah OR
+Yuma AZ,Maricopa AZ
+Alameda CA,San Luis Obispo CA
+Alpine CA,Lincoln OR
+Amador CA,Lincoln OR
+Butte CA,San Luis Obispo CA
+Calaveras CA,Lincoln OR
+Colusa CA,Spokane WA
+Contra Costa CA,Solano CA
+Del Norte CA,Multnomah OR
+El Dorado CA,Lincoln OR
+Fresno CA,Solano CA
+Glenn CA,Lincoln OR
+Humboldt CA,Spokane WA
+Imperial CA,Solano CA
+Inyo CA,San Luis Obispo CA
+Kern CA,Solano CA
+Kings CA,San Luis Obispo CA
+Lake CA,San Luis Obispo CA
+Lassen CA,Lincoln OR
+Los Angeles CA,Solano CA
+Madera CA,San Luis Obispo CA
+Marin CA,Multnomah OR
+Mariposa CA,Maricopa AZ
+Mendocino CA,Spokane WA
+Merced CA,San Luis Obispo CA
+Modoc CA,Spokane WA
+Mono CA,Maricopa AZ
+Monterey CA,Multnomah OR
+Napa CA,Spokane WA
+Nevada CA,Spokane WA
+Orange CA,Solano CA
+Placer CA,Multnomah OR
+Plumas CA,Lincoln OR
+Riverside CA,Solano CA
+Sacramento CA,Solano CA
+San Benito CA,Multnomah OR
+San Bernardino CA,Solano CA
+San Diego CA,San Luis Obispo CA
+San Francisco CA,San Luis Obispo CA
+San Joaquin CA,San Luis Obispo CA
+San Luis Obispo CA,San Luis Obispo CA
+San Mateo CA,San Luis Obispo CA
+Santa Barbara CA,San Luis Obispo CA
+Santa Clara CA,San Luis Obispo CA
+Santa Cruz CA,San Luis Obispo CA
+Shasta CA,Solano CA
+Sierra CA,Lincoln OR
+Siskiyou CA,Lincoln OR
+Solano CA,Solano CA
+Sonoma CA,Multnomah OR
+Stanislaus CA,San Luis Obispo CA
+Sutter CA,San Luis Obispo CA
+Tehama CA,Multnomah OR
+Trinity CA,Maricopa AZ
+Tulare CA,San Luis Obispo CA
+Tuolumne CA,Spokane WA
+Ventura CA,San Luis Obispo CA
+Yolo CA,San Luis Obispo CA
+Yuba CA,Solano CA
+Adams CO,Multnomah OR
+Alamosa CO,Spokane WA
+Arapahoe CO,Multnomah OR
+Archuleta CO,Multnomah OR
+Baca CO,Lincoln OR
+Bent CO,Multnomah OR
+Boulder CO,Multnomah OR
+Broomfield CO,Multnomah OR
+Chaffee CO,Lincoln OR
+Cheyenne CO,Lincoln OR
+Clear Creek CO,Multnomah OR
+Conejos CO,Spokane WA
+Costilla CO,Spokane WA
+Crowley CO,Lincoln OR
+Custer CO,Multnomah OR
+Delta CO,Multnomah OR
+Denver CO,Multnomah OR
+Dolores CO,Lincoln OR
+Douglas CO,Multnomah OR
+Eagle CO,Spokane WA
+El Paso CO,Multnomah OR
+Elbert CO,Multnomah OR
+Fremont CO,Multnomah OR
+Garfield CO,Multnomah OR
+Gilpin CO,San Luis Obispo CA
+Grand CO,Lincoln OR
+Gunnison CO,Lincoln OR
+Hinsdale CO,Lincoln OR
+Huerfano CO,Maricopa AZ
+Jackson CO,Lincoln OR
+Jefferson CO,Multnomah OR
+Kiowa CO,Lincoln OR
+Kit Carson CO,Lincoln OR
+La Plata CO,Multnomah OR
+Lake CO,Spokane WA
+Larimer CO,Spokane WA
+Las Animas CO,Spokane WA
+Lincoln CO,Lincoln OR
+Logan CO,Lincoln OR
+Mesa CO,Multnomah OR
+Mineral CO,Spokane WA
+Moffat CO,Spokane WA
+Montezuma CO,Spokane WA
+Montrose CO,Spokane WA
+Morgan CO,Spokane WA
+Otero CO,San Luis Obispo CA
+Ouray CO,Maricopa AZ
+Park CO,Lincoln OR
+Phillips CO,Lincoln OR
+Pitkin CO,Spokane WA
+Prowers CO,Lincoln OR
+Pueblo CO,Multnomah OR
+Rio Blanco CO,Lincoln OR
+Rio Grande CO,Lincoln OR
+Routt CO,Spokane WA
+Saguache CO,Lincoln OR
+San Juan CO,Lincoln OR
+San Miguel CO,Maricopa AZ
+Sedgwick CO,Lincoln OR
+Summit CO,Lincoln OR
+Teller CO,Multnomah OR
+Washington CO,Lincoln OR
+Weld CO,Spokane WA
+Yuma CO,Lincoln OR
+Ada ID,Multnomah OR
+Adams ID,Lincoln OR
+Bannock ID,Spokane WA
+Bear Lake ID,Lincoln OR
+Benewah ID,Lincoln OR
+Bingham ID,Lincoln OR
+Blaine ID,Lincoln OR
+Boise ID,Multnomah OR
+Bonner ID,Lincoln OR
+Bonneville ID,Spokane WA
+Boundary ID,Lincoln OR
+Butte ID,Lincoln OR
+Camas ID,Lincoln OR
+Canyon ID,Spokane WA
+Caribou ID,Lincoln OR
+Cassia ID,Lincoln OR
+Clark ID,Spokane WA
+Clearwater ID,Lincoln OR
+Custer ID,Lincoln OR
+Elmore ID,Lincoln OR
+Franklin ID,Lincoln OR
+Fremont ID,Lincoln OR
+Gem ID,Lincoln OR
+Gooding ID,Lincoln OR
+Idaho ID,Lincoln OR
+Jefferson ID,Lincoln OR
+Jerome ID,Lincoln OR
+Kootenai ID,Spokane WA
+Latah ID,Lincoln OR
+Lemhi ID,Lincoln OR
+Lewis ID,Lincoln OR
+Lincoln ID,Lincoln OR
+Madison ID,Spokane WA
+Minidoka ID,Lincoln OR
+Nez Perce ID,Lincoln OR
+Oneida ID,Lincoln OR
+Owyhee ID,Lincoln OR
+Payette ID,Lincoln OR
+Power ID,Lincoln OR
+Shoshone ID,Lincoln OR
+Teton ID,Lincoln OR
+Twin Falls ID,Lincoln OR
+Valley ID,Lincoln OR
+Washington ID,Lincoln OR
+Beaverhead MT,Spokane WA
+Big Horn MT,Lincoln OR
+Blaine MT,Lincoln OR
+Broadwater MT,Lincoln OR
+Carbon MT,Lincoln OR
+Carter MT,Lincoln OR
+Cascade MT,Multnomah OR
+Chouteau MT,Lincoln OR
+Custer MT,Multnomah OR
+Deer Lodge MT,Lincoln OR
+Fergus MT,Lincoln OR
+Flathead MT,Lincoln OR
+Gallatin MT,Lincoln OR
+Garfield MT,Lincoln OR
+Glacier MT,Spokane WA
+Golden Valley MT,Lincoln OR
+Granite MT,Spokane WA
+Hill MT,Lincoln OR
+Jefferson MT,Lincoln OR
+Judith Basin MT,Lincoln OR
+Lake MT,Spokane WA
+Lewis and Clark MT,Multnomah OR
+Liberty MT,Lincoln OR
+Lincoln MT,Lincoln OR
+Madison MT,Lincoln OR
+McCone MT,Lincoln OR
+Meagher MT,Multnomah OR
+Mineral MT,Lincoln OR
+Missoula MT,Spokane WA
+Musselshell MT,Lincoln OR
+Park MT,Spokane WA
+Petroleum MT,Lincoln OR
+Phillips MT,Lincoln OR
+Pondera MT,Lincoln OR
+Powder River MT,Lincoln OR
+Powell MT,Lincoln OR
+Prairie MT,Lincoln OR
+Ravalli MT,Lincoln OR
+Rosebud MT,Multnomah OR
+Sanders MT,Lincoln OR
+Silver Bow MT,Lincoln OR
+Stillwater MT,Lincoln OR
+Sweet Grass MT,Lincoln OR
+Teton MT,Lincoln OR
+Toole MT,Lincoln OR
+Treasure MT,Lincoln OR
+Valley MT,Lincoln OR
+Wheatland MT,Spokane WA
+Yellowstone MT,Spokane WA
+Bernalillo NM,Solano CA
+Catron NM,Multnomah OR
+Chaves NM,Multnomah OR
+Cibola NM,Maricopa AZ
+Colfax NM,Lincoln OR
+De Baca NM,Solano CA
+Doña Ana NM,Maricopa AZ
+Eddy NM,Spokane WA
+Grant NM,Lincoln OR
+Guadalupe NM,Lincoln OR
+Harding NM,Lincoln OR
+Hidalgo NM,Multnomah OR
+Lincoln NM,Multnomah OR
+Los Alamos NM,Spokane WA
+Luna NM,Maricopa AZ
+McKinley NM,Lincoln OR
+Mora NM,Spokane WA
+Otero NM,Maricopa AZ
+Rio Arriba NM,Multnomah OR
+San Juan NM,Multnomah OR
+San Miguel NM,Multnomah OR
+Sandoval NM,San Luis Obispo CA
+Santa Fe NM,San Luis Obispo CA
+Sierra NM,Maricopa AZ
+Socorro NM,Multnomah OR
+Taos NM,Spokane WA
+Torrance NM,Multnomah OR
+Union NM,Lincoln OR
+Valencia NM,Maricopa AZ
+Carson City NV,Maricopa AZ
+Churchill NV,Spokane WA
+Clark NV,Maricopa AZ
+Douglas NV,Multnomah OR
+Elko NV,Lincoln OR
+Esmeralda NV,Lincoln OR
+Eureka NV,Lincoln OR
+Humboldt NV,Lincoln OR
+Lander NV,Lincoln OR
+Lincoln NV,Lincoln OR
+Lyon NV,Multnomah OR
+Mineral NV,Spokane WA
+Nye NV,Spokane WA
+Pershing NV,Lincoln OR
+Storey NV,Maricopa AZ
+Washoe NV,San Luis Obispo CA
+White Pine NV,Lincoln OR
+Baker OR,Lincoln OR
+Benton OR,Spokane WA
+Clackamas OR,Multnomah OR
+Clatsop OR,Spokane WA
+Columbia OR,Lincoln OR
+Coos OR,Spokane WA
+Crook OR,Lincoln OR
+Curry OR,Lincoln OR
+Deschutes OR,Spokane WA
+Douglas OR,Spokane WA
+Gilliam OR,Lincoln OR
+Grant OR,Lincoln OR
+Harney OR,Lincoln OR
+Hood River OR,Spokane WA
+Jackson OR,Multnomah OR
+Jefferson OR,Lincoln OR
+Josephine OR,Spokane WA
+Klamath OR,Lincoln OR
+Lake OR,Lincoln OR
+Lane OR,Lincoln OR
+Lincoln OR,Lincoln OR
+Linn OR,Spokane WA
+Malheur OR,Lincoln OR
+Marion OR,Multnomah OR
+Morrow OR,Lincoln OR
+Multnomah OR,Multnomah OR
+Polk OR,Spokane WA
+Sherman OR,Lincoln OR
+Tillamook OR,Lincoln OR
+Umatilla OR,Spokane WA
+Union OR,Lincoln OR
+Wallowa OR,Lincoln OR
+Wasco OR,Lincoln OR
+Washington OR,Spokane WA
+Wheeler OR,Lincoln OR
+Yamhill OR,Lincoln OR
+Custer SD,Spokane WA
+Fall River SD,Spokane WA
+Lawrence SD,Spokane WA
+El Paso TX,Maricopa AZ
+Beaver UT,Lincoln OR
+Box Elder UT,Lincoln OR
+Cache UT,Multnomah OR
+Carbon UT,Lincoln OR
+Daggett UT,Multnomah OR
+Davis UT,Multnomah OR
+Duchesne UT,Lincoln OR
+Emery UT,Lincoln OR
+Garfield UT,Spokane WA
+Grand UT,Lincoln OR
+Iron UT,Multnomah OR
+Juab UT,Lincoln OR
+Kane UT,Multnomah OR
+Millard UT,Lincoln OR
+Morgan UT,Spokane WA
+Piute UT,Multnomah OR
+Rich UT,Maricopa AZ
+Salt Lake UT,San Luis Obispo CA
+San Juan UT,Lincoln OR
+Sanpete UT,Spokane WA
+Sevier UT,Multnomah OR
+Summit UT,Multnomah OR
+Tooele UT,Lincoln OR
+Uintah UT,Spokane WA
+Utah UT,Multnomah OR
+Wasatch UT,San Luis Obispo CA
+Washington UT,Maricopa AZ
+Wayne UT,Multnomah OR
+Weber UT,Multnomah OR
+Adams WA,Lincoln OR
+Asotin WA,Multnomah OR
+Benton WA,Spokane WA
+Chelan WA,Lincoln OR
+Clallam WA,Lincoln OR
+Clark WA,Spokane WA
+Columbia WA,Lincoln OR
+Cowlitz WA,Lincoln OR
+Douglas WA,Lincoln OR
+Ferry WA,Lincoln OR
+Franklin WA,Lincoln OR
+Garfield WA,Lincoln OR
+Grant WA,Lincoln OR
+Grays Harbor WA,Spokane WA
+Island WA,Spokane WA
+Jefferson WA,Lincoln OR
+King WA,Multnomah OR
+Kitsap WA,Spokane WA
+Kittitas WA,Lincoln OR
+Klickitat WA,Lincoln OR
+Lewis WA,Lincoln OR
+Lincoln WA,Lincoln OR
+Mason WA,Lincoln OR
+Okanogan WA,Lincoln OR
+Pacific WA,Spokane WA
+Pend Oreille WA,Lincoln OR
+Pierce WA,Spokane WA
+San Juan WA,Spokane WA
+Skagit WA,Spokane WA
+Skamania WA,Spokane WA
+Snohomish WA,Spokane WA
+Spokane WA,Spokane WA
+Stevens WA,Lincoln OR
+Thurston WA,Spokane WA
+Wahkiakum WA,Lincoln OR
+Walla Walla WA,Lincoln OR
+Whatcom WA,Lincoln OR
+Whitman WA,Lincoln OR
+Yakima WA,Lincoln OR
+Albany WY,Spokane WA
+Big Horn WY,Lincoln OR
+Campbell WY,Lincoln OR
+Carbon WY,Lincoln OR
+Converse WY,Lincoln OR
+Crook WY,Lincoln OR
+Fremont WY,Spokane WA
+Goshen WY,Lincoln OR
+Hot Springs WY,Multnomah OR
+Johnson WY,Spokane WA
+Laramie WY,Spokane WA
+Lincoln WY,Lincoln OR
+Natrona WY,Spokane WA
+Niobrara WY,Lincoln OR
+Park WY,Lincoln OR
+Platte WY,Spokane WA
+Sheridan WY,Lincoln OR
+Sublette WY,Lincoln OR
+Sweetwater WY,Lincoln OR
+Teton WY,Lincoln OR
+Uinta WY,Spokane WA
+Washakie WY,Lincoln OR
+Weston WY,Lincoln OR
