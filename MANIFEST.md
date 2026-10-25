@@ -15,6 +15,7 @@ Update this file in the same PR that adds, moves, or deletes a file.
 
 - Add a data source/class: copy `wecc/<similar>.py`; export in `wecc/__init__.py`; test in `wecc/_test/test_<name>.py`; add rows here
 - Change an output column: module docstring example, `wecc/__init__.py` Data section, `README.md`, `DESIGN.md` columns table
+- Add or refresh weather data: `wecc weather STATE YEAR [--refresh]` (`wecc/weather.py`)
 - Add a CLI option: `wecc/cli.py`, `wecc/__init__.py` Syntax section
 - Regenerate curated data: script named in the data table below; update that folder's `README.md`
 - Release: `pyproject.toml` version; see the eudoxys-package skill checklist
@@ -24,7 +25,8 @@ Update this file in the same PR that adds, moves, or deletes a file.
 | Path | Purpose | Notes |
 |---|---|---|
 | `wecc/__init__.py` | package docs, re-exports | pdoc landing page |
-| `wecc/cli.py` | CLI `main()` | entry point `wecc`; tested by `_test/test_cli.py` |
+| `wecc/cli.py` | CLI `main()` | entry point `wecc`; tested by `_test/test_cli.py`, `_test/test_weather.py` |
+| `wecc/weather.py` | add/refresh county weather files (`wecc weather STATE YEAR`) | tested by `_test/test_weather.py`; needs NSRDB credentials to download |
 
 Add a row for each new module, naming the test that covers it.
 
