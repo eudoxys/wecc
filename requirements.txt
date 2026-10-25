@@ -1,6 +1,7 @@
-# third-party packages (unpinned unless a pin is needed), e.g.
-# numpy
-# pandas
+# third-party packages (unpinned unless a pin is needed)
+pandas
 
-# sibling Eudoxys packages, e.g.
-# cache @ git+https://github.com/eudoxys/cache
+# sibling Eudoxys packages
+cache @ git+https://github.com/eudoxys/cache
+fips @ git+https://github.com/eudoxys/fips
+weather @ git+https://github.com/eudoxys/weather

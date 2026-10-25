@@ -4,11 +4,17 @@ Syntax
 ------
 
     wecc COMMAND [-h] [--version] [-d] [-w] [OPTIONS ...]
+    wecc weather STATE YEAR [-r|--refresh] [-q|--quiet]
 
 Positional arguments
 --------------------
 
-  - `COMMAND`: what it does
+  - `COMMAND`: one of
+
+    - `weather`: add (or with `--refresh`, re-download) the county weather
+      files `wecc/weather/STATE/COUNTY/W_YEAR.csv.gz` for every county of a
+      WECC state, from NSRDB via the Eudoxys `weather` package (see
+      `wecc.weather`)
 
 Optional arguments
 ------------------
