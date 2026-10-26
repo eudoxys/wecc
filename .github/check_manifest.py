@@ -33,7 +33,8 @@ def main(manifest:str="MANIFEST.md") -> int:
     """Run the check"""
     with open(manifest,encoding="utf-8") as fh:
         patterns = entries(fh.read())
-    files = subprocess.run(["git","ls-files"],capture_output=True,text=True,check=True).stdout.split()
+    files = subprocess.run(["git","-c","core.quotepath=off","ls-files","-z"],
+        capture_output=True,text=True,check=True).stdout.split("\0")[:-1]
     uncovered = [f for f in files if not any(matches(p,f) for p in patterns)]
     unused = [p for p in patterns if not any(matches(p,f) for f in files)]
     for f in uncovered:
