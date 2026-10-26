@@ -37,5 +37,18 @@ or credentials are needed; runs in about 10 seconds:
 
 	pytest wecc/_test/test_weather.py
 
+test_loads.py
+-------------
+
+Fast, self-contained checks of `wecc.loads` and `wecc loads`: state and year
+validation, medoid harmonics, which files each county and year requires,
+adding, skipping and refreshing files, non-WECC counties, invalid builds
+leaving files intact, finding files in the `loads` cache, and missing
+credentials. Builds by the `loads` package are replaced by synthetic data and
+files go to a temporary folder, so no network or credentials are needed; runs
+in about 30 seconds:
+
+	pytest wecc/_test/test_loads.py
+
 Add a section like this one for each new `test_<name>.py`: what it checks, on
 which case, whether it is fast/synthetic or networked, and how to run it alone.

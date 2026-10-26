@@ -13,6 +13,15 @@ county as it goes, then a summary such as
     NV 2023: 17 added
 
 See `wecc.weather` for details.
+
+    wecc loads NV 2018
+
+adds any missing 2018 reference load files and load estimates for the Nevada
+counties, then a summary such as
+
+    NV 2018: 17 added
+
+See `wecc.loads` for details.
 """
 
 import sys
@@ -61,6 +70,17 @@ def main(argv:list[str]|None=None) -> int:
     weather.add_argument("-q","--quiet",action="store_true",
         help="do not report progress per county")
 
+    loads = commands.add_parser("loads",parents=[common],
+        help="add or refresh county load data for a WECC state and year",
+        description="Add or refresh the county load files in wecc/loads/STATE/COUNTY/ "
+            "(2018 reference data and Estimate_YEAR.csv.gz)")
+    loads.add_argument("state",type=str.upper,help="WECC state abbreviation, e.g., CA")
+    loads.add_argument("year",type=int,help="load year, e.g., 2018 (reference data) or 2023 (estimate only)")
+    loads.add_argument("-r","--refresh",action="store_true",
+        help="rebuild and rewrite files that already exist")
+    loads.add_argument("-q","--quiet",action="store_true",
+        help="do not report progress per county")
+
     args = parser.parse_args(argv)
     debug = getattr(args,"debug",False)
 
@@ -72,15 +92,19 @@ def main(argv:list[str]|None=None) -> int:
 
         match args.command:
 
-            case "weather":
+            case "weather" | "loads":
 
-                from wecc import weather as wecc_weather # pylint: disable=import-outside-toplevel
+                # pylint: disable=import-outside-toplevel
+                if args.command == "weather":
+                    from wecc import weather as module
+                else:
+                    from wecc import loads as module
                 if not args.quiet and not debug:
-                    logging.getLogger(wecc_weather.__file__).setLevel(logging.INFO)
-                summary = wecc_weather.update(args.state,args.year,refresh=args.refresh)
+                    logging.getLogger(module.__file__).setLevel(logging.INFO)
+                summary = module.update(args.state,args.year,refresh=args.refresh)
                 counts = summary.status.value_counts()
                 print(f"{args.state} {args.year}: "
-                    + ", ".join(f"{counts[x]} {x}" for x in wecc_weather.STATUS if x in counts))
+                    + ", ".join(f"{counts[x]} {x}" for x in module.STATUS if x in counts))
                 failed = summary[summary.status=="failed"]
                 for county,row in failed.iterrows():
                     print(f"ERROR [wecc]: {args.state} {county} {args.year}: {row.message}",file=sys.stderr)
