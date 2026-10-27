@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
 # list every file pattern the package reads at run time
-"wecc" = ["*.py"]
+"wecc" = ["*.py","*.csv","*.csv.gz"]
 
 [tool.setuptools.dynamic]
 dependencies = {file=["requirements.txt"]}
