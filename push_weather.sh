@@ -33,7 +33,7 @@ for STATE in $WECC; do
 				$GIT add "$LOCAL"
 			fi
 		done
-		$GIT commit -m "Adding $(basename $COUNTY) $STATE"
-		$GIT push
+		$GIT commit -m "Updating $(basename $COUNTY) $STATE"
+		$GIT push origin
 	done
 done
