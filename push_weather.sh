@@ -35,8 +35,5 @@ for STATE in $WECC; do
 		done
 		$GIT commit -m "Adding $(basename $COUNTY) $STATE"
 		$GIT push
-		if [ "$(basename $COUNTY)" != "$STATE" ] ; then
-			exit
-		fi
 	done
 done
