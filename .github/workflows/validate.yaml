@@ -6,13 +6,14 @@ on:
     branches: [ main ]
     paths: &paths
       - "wecc/**"
-      - "!wecc/_explore/**"
-      - "!wecc/_review/**"
-      - "!wecc/_validate/**"
-      - "!**/*.md"
       - "requirements.txt"
       - "pyproject.toml"
       - ".github/workflows/validate.yaml"
+      - "!wecc/_explore/**"
+      - "!wecc/_review/**"
+      - "!wecc/_validate/**"
+      - "!wecc/loads/**"
+      - "!wecc/weather/**"
   pull_request:
     branches: [ main ]
     paths: *paths
@@ -36,6 +37,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+
+        # allow large data folders to be ignored
+        sparse-checkout-cone-mode: false
+        sparse-checkout: |
+          /*
+          !/wecc/loads/
+          !/wecc/weather/
 
     - name: Setup python
       uses: actions/setup-python@v5
