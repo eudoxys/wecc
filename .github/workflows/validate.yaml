@@ -37,7 +37,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      sparse-check: |
+      sparse-checkout: |
         !wecc/loads/
         !wecc/weather/
 
