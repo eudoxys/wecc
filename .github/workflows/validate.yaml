@@ -6,13 +6,14 @@ on:
     branches: [ main ]
     paths: &paths
       - "wecc/**"
-      - "!wecc/_explore/**"
-      - "!wecc/_review/**"
-      - "!wecc/_validate/**"
-      - "!**/*.md"
       - "requirements.txt"
       - "pyproject.toml"
       - ".github/workflows/validate.yaml"
+      - "!wecc/_explore/**"
+      - "!wecc/_review/**"
+      - "!wecc/_validate/**"
+      - "!wecc/loads"
+      - "!wecc/weather"
   pull_request:
     branches: [ main ]
     paths: *paths
