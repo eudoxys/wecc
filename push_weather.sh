@@ -3,8 +3,6 @@
 # This script update the wecc repo based on the cache in the current venv
 #
 
-CACHE_VERSION=1
-
 ACTION=echo # echo for dry-run, nothing to take the action
 
 if [ -z "$VIRTUAL_ENV" ]; then
@@ -13,6 +11,7 @@ if [ -z "$VIRTUAL_ENV" ]; then
 fi
 
 PYTHON_VERSION=$(python --version | cut -f2 -d' ' | cut -f-2 -d'.')
+CACHE_VERSION=$(python3 -c "import weather;print(weather.weather._version)")
 
 # update weather
 $ACTION git switch -c update-weather
@@ -25,6 +24,5 @@ for STATE in $WECC; do
 		done
 		$ACTION git commit -m "Adding $(basename $COUNTY) $STATE"
 		$ACTION git push
-		exit
 	done
 done
