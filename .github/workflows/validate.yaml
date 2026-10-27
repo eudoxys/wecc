@@ -38,6 +38,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
+
+        # allow large data folders to be ignored
         sparse-checkout-cone-mode: false
         sparse-checkout: |
           /*
